@@ -1,0 +1,136 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #660000, #330000);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.navbar img {
+    height: 50px;
+    margin-left: 20px;
+}
+
+.nav-buttons {
+    margin-right: 20px;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.nav-buttons a:hover {
+    color: #ff0000;
+}
+
+/* Status Section */
+.status-container {
+    margin-top: 150px;
+    text-align: center;
+    padding: 30px;
+}
+
+.status-header {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.status-line {
+    width: 400px;
+    height: 5px;
+    background-color: #00ff00;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.status-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00ff00;
+    margin-top: 15px;
+}
+
+/* Privacy Policy & Terms of Service */
+.content-container {
+    max-width: 900px;
+    margin-top: 150px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.content-container h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.content-container h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #ff0000;
+}
+
+.content-container p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.content-container a {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content-container a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+.footer {
+    margin-top: 50px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    position: relative;
+    bottom: 0;
+}
+
+.footer p {
+    font-size: 16px;
+    color: white;
+}
