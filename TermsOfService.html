@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="loader">
+        <div class="loader"></div>
+    </div>
 
     <!-- Navbar -->
     <div class="navbar">
@@ -42,6 +45,17 @@
         <h2>5. Contact Us</h2>
         <p>For questions, contact us at <a href="mailto:realmraura@gmail.com">realmraura@gmail.com</a>.</p>
     </div>
-
+    <script>
+        window.addEventListener("load", function () {
+            setTimeout(() => {
+                document.getElementById("loader").style.opacity = "0"; // Smooth fade-out
+                setTimeout(() => {
+                    document.getElementById("loader").style.display = "none"; // Hide loader after fade
+                    document.querySelector(".content").style.opacity = "1";
+                    document.querySelector(".content").style.transform = "translateY(0)"; // Slide in effect
+                }, 600);
+            }, 2500);
+        });
+    </script>
 </body>
 </html>
